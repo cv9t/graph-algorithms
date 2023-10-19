@@ -1,5 +1,6 @@
 import { describe, expect, jest, test } from '@jest/globals';
-import { DijkstraError, Graph, dijkstraShortestPaths } from '~lib/dijkstra-shortest-paths';
+
+import { DijkstraError, type Graph, dijkstraShortestPaths } from '~lib/dijkstra-shortest-paths';
 
 describe('dijkstra-shortest-paths', () => {
   const mockedGraph: Graph = {

@@ -1,8 +1,4 @@
-export class DijkstraError extends Error {
-  public constructor(message: string) {
-    super(message);
-  }
-}
+export class DijkstraError extends Error {}
 
 export type Graph = Record<string, Record<string, number>>;
 
