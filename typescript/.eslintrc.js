@@ -1,5 +1,5 @@
 module.exports = {
   root: true,
   extends: ['@cv9t/eslint-config/base'],
-  ignorePatterns: ['.eslintrc.js'],
+  ignorePatterns: ['.eslintrc.js', 'jest.config.js'],
 };
