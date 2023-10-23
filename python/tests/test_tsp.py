@@ -15,6 +15,5 @@ class TestTsp():
         antColony = AntColony(self.mockedGraph)
         distance, path = antColony.search(10000)
 
-        print(path, distance)
         assert distance == 11
         assert path == ['a', 'b', 'g', 'c', 'd', 'f']
