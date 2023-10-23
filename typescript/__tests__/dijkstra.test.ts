@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { Graph, Dijkstra } from '~lib';
+import { Graph, Dijkstra } from '~lib/dijkstra';
 
 describe("Dijkstra's algorithm", () => {
   const mockedGraph = new Graph({

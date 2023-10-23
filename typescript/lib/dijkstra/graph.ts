@@ -1,8 +1,19 @@
-import { Node, type NodeNeighbor } from './node';
+import { type GraphObject, type NodeNeighbor } from './types';
 
-export * from './node';
+export class Node {
+  constructor(
+    private readonly _name: string,
+    private readonly _neighbors: NodeNeighbor[],
+  ) {}
 
-export type GraphObject = Record<string, NodeNeighbor[]>;
+  get name(): string {
+    return this._name;
+  }
+
+  get neighbors(): NodeNeighbor[] {
+    return this._neighbors;
+  }
+}
 
 export class Graph {
   private readonly _nodes: Node[] = [];
