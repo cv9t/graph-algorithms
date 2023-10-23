@@ -1,1 +1,2 @@
-from .dijkstra_shortest_paths import dijkstra_shortest_paths, DijkstraError
+from .core import *
+from .dijkstra import *
