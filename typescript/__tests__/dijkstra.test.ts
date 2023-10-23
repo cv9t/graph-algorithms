@@ -39,7 +39,8 @@ describe("Dijkstra's algorithm", () => {
   });
 
   test("finds the shortest path from '1' to '9'", () => {
-    const [distance, path] = Dijkstra.search(mockedGraph, '1', '9');
+    const dijkstra = new Dijkstra(mockedGraph);
+    const [distance, path] = dijkstra.search('1', '9');
 
     expect(distance).toBe(21);
     expect(path).toEqual(['1', '3', '5', '9']);
