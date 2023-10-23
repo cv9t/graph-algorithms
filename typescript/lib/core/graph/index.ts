@@ -1,8 +1,8 @@
 import { Node, type NodeNeighbor } from './node';
 
-export type GraphObject = Record<string, NodeNeighbor[]>;
-
 export * from './node';
+
+export type GraphObject = Record<string, NodeNeighbor[]>;
 
 export class Graph {
   private readonly _nodes: Node[] = [];

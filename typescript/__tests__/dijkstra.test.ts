@@ -1,6 +1,6 @@
 import { describe, expect, test } from '@jest/globals';
 
-import { Graph, dijkstra } from '~lib';
+import { Graph, Dijkstra } from '~lib';
 
 describe("Dijkstra's algorithm", () => {
   const mockedGraph = new Graph({
@@ -38,8 +38,8 @@ describe("Dijkstra's algorithm", () => {
     '9': [],
   });
 
-  test("finds the shortest from '1' to '9'", () => {
-    const [distance, path] = dijkstra(mockedGraph, '1', '9');
+  test("finds the shortest path from '1' to '9'", () => {
+    const [distance, path] = Dijkstra.search(mockedGraph, '1', '9');
 
     expect(distance).toBe(21);
     expect(path).toEqual(['1', '3', '5', '9']);
