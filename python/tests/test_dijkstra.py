@@ -2,7 +2,7 @@ from lib import Dijkstra, Graph
 
 
 class TestDijkstra():
-    def test_search(self):
+    def test_search(self) -> None:
         graph = Graph({
             '1': [
                 ('2', 10),

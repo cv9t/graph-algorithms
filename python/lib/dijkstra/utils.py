@@ -1,7 +1,7 @@
-from ..graph import Graph
+from .graph import Graph
 
 
-def allEdgeWeightsPositive(graph: Graph) -> bool:
+def all_edge_weights_positive(graph: Graph) -> bool:
     for node in graph.nodes:
         for _, weight in node.neighbors:
             if weight < 0:
