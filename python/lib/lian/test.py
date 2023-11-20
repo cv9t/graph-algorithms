@@ -9,8 +9,8 @@ def main():
     lian = Lian(binarized)
     start = Point(175, 304)
     end = Point(1277, 689)
-    delta = 10
-    max_angle = 20
+    delta = 8
+    max_angle = 16
     path = lian.search(start, end, delta, max_angle)
     if len(path) != 0:
         ImageUtils.draw_the_path(image, path)
